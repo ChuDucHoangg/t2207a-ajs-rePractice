@@ -1,11 +1,32 @@
-.container {
-  margin-top: 20px;
+.user-section {
+  background-color: #347ab7;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-table {
-  width: 100%;
+.add-product-btn {
+  margin: 15px 0;
 }
 
-.btn {
-  margin-right: 5px;
+.table {
+  border: 3px solid #689ccb;
+  border-radius: 55px;
+}
+
+.table th,
+.table td {
+  border-color: black;
+  text-align: center;
+}
+
+.action-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-icons i {
+  cursor: pointer;
+  font-size: 1.2rem;
 }

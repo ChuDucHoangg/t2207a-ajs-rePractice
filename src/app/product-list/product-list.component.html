@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Product List</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Action</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>
+          <button (click)="editProduct(product)" class="btn btn-sm btn-warning">
+            <i class="fa fa-edit"></i>
+          </button>
+          <button
+            (click)="deleteProduct(product)"
+            class="btn btn-sm btn-danger"
+          >
+            <i class="fa fa-trash"></i>
+          </button>
+        </td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price | currency }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
